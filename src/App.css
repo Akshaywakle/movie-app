@@ -1,0 +1,23 @@
+.moviecard .card .desc{
+    display: flex;
+    justify-content: space-between;
+}
+.moviecard .card{
+    border: none !important;
+    border-radius: 20px;
+}
+.moviecard .card .card-body{
+    border-radius: 20px;
+}
+.moviecard .card img{
+    height: 300px;
+  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+body{
+    background: lightgrey;
+}
+.bg-dark {
+    background-color: #0a2540!important;
+}
