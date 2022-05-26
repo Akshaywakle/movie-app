@@ -21,25 +21,24 @@ function App() {
     <>
       <section>
         <div className='container'>
-
-        <div className='d-flex my-5'>
-        <input  className='form-control' type="text" value={searchTerm} placeholder="search Movie" onChange={(e) => setSearchTerm(e.target.value)} />
+          <div className='d-flex my-5'>
+            <input className='form-control' type="text" value={searchTerm} placeholder="search Movie" onChange={(e) => setSearchTerm(e.target.value)} />
             <button className='btn btn-primary' href='' onClick={() => SearchMovies(searchTerm)}>Search Movie</button>
-        </div>
+          </div>
         </div>
       </section>
       {
         movies?.length > 0
           ? (
-          <section className='moviecard'>
+            <section className='moviecard'>
               <div className='container'>
-              <div className='row'>
-                {movies.map((movie) => (
-                  <MovieCard movie={movie} />
-                ))}
+                <div className='row'>
+                  {movies.map((movie) => (
+                    <MovieCard movie={movie} />
+                  ))}
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
           ) : (
             <div className='container'><h2>No movies found</h2></div>
           )
